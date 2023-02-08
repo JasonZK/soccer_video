@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "ffmpeg.ffmpegFile",
+      "type": "java.lang.String",
+      "description": "Description for ffmpeg.ffmpegFile."
+  }
+] }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>上传</title>
+<!--    &lt;!&ndash; jquery &ndash;&gt;-->
+<!--    <script type="text/javascript" th:src="@{/js/jquery.min.js}"></script>-->
+<!--    &lt;!&ndash; bootstrap &ndash;&gt;-->
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap.min.css}"/>-->
+<!--    <script type="text/javascript" th:src="@{/bootstrap/js/bootstrap.min.js}"></script>-->
+<!--    &lt;!&ndash; jquery-validator &ndash;&gt;-->
+<!--    <script type="text/javascript" th:src="@{/jquery-validation/jquery.validate.min.js}"></script>-->
+<!--    <script type="text/javascript" th:src="@{/jquery-validation/localization/messages_zh.min.js}"></script>-->
+<!--    &lt;!&ndash; layer &ndash;&gt;-->
+<!--    <script type="text/javascript" th:src="@{/layer/layer.js}"></script>-->
+<!--    &lt;!&ndash; md5.js &ndash;&gt;-->
+<!--    <script type="text/javascript" th:src="@{/js/md5.min.js}"></script>-->
+<!--    &lt;!&ndash; common.js &ndash;&gt;-->
+<!--    <script type="text/javascript" th:src="@{/js/common.js}"></script>-->
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+
+    <!-- 引入jq,bootstrap -->
+    <!-- 图片上传即时预览插件 -->
+    <link rel="stylesheet" href="/bootstrap/css/fileinput.min.css">
+    <script type="text/javascript" src="/bootstrap/js/fileinput.min.js"></script>
+    <!-- 这个是汉化-->
+<!--    <script type="text/javascript"src="../js/bjs/fileinput_locale_zh.js"></script>-->
+
+</head>
+
+<body>
+<form name="loginForm" id="loginForm" method="post" style="width:50%; margin:0 auto">
+
+    <br>
+    <div>
+<!--        <video style="height:auto;" src="" id="video0" controls="controls"></video>-->
+<!--        <input id="video" name="video" class="form-control" type="file" style="height:auto;"  />-->
+
+<!--        <input id="upVideo"  name="videoFileAddress" data-ref="url2" type="file" accept="mp4" />-->
+<!--        <input type="hidden" name="url2" value="">-->
+        <input id="upVideo" name = "upVideo" type="file" class="file"/>
+
+    </div>
+</form>
+</body>
+<script>
+
+    // hTML5实现表单内的上传文件框，上传前预览视频，刷新预览video，使用HTML5 的File API,
+    // 建立一个可存取到该file的url，一个空的video标签，ID为video0,把选择的文件显示在video标签中，实现视频预览功能。
+    // 需要选择支持HTML API的浏览器。
+    $("#video").change(function () {
+        var objUrl = getObjectURL(this.files[0]);
+        console.log("objUrl = " + objUrl);
+        if (objUrl) {
+            $("#video0").attr("src", objUrl);
+        }
+    });
+    //建立一个可存取到该file的url
+    function getObjectURL(file) {
+        var url = null;
+        if (window.createObjectURL != undefined) { // basic
+            url = window.createObjectURL(file);
+        } else if (window.URL != undefined) { // mozilla(firefox)
+            url = window.URL.createObjectURL(file);
+        } else if (window.webkitURL != undefined) { // webkit or chrome
+            url = window.webkitURL.createObjectURL(file);
+        }
+        return url;
+    }
+
+    $("#upVideo").fileinput({
+        dropZoneTitle : "请上传小于150M的视频！",
+        uploadUrl : "/upload/saveVideoAddress",
+        language : "zh",
+        autoReplace : true,
+        showCaption : false,
+        showUpload : true,
+        overwriteInitial : true,
+        showUploadedThumbs : true,
+        //showPreview:false,                   //显示上传图片的大小信息
+        maxFileCount : 1,
+        minFileCount:1,
+        maxFileSize : 15360000,//文件最大153600kb=15000M
+        initialPreviewShowDelete : false,
+        showRemove : false,//是否显示删除按钮
+        showClose : false,
+        layoutTemplates : {
+            actionUpload:'',
+        },
+        allowedFileExtensions : [ "mp4","avi","dat","3gp","mov","rmvb"],
+        previewSettings : {
+            image : {
+                width : "100%",
+                height : "100%"
+            },
+        }
+    });
+    //异步上传返回结果处理
+    $('#upVideo').on('fileerror', function(event, data, msg) {
+        console.log("fileerror");
+        console.log(data);
+    });
+    //异步上传返回结果处理
+    $("#upVideo").on("fileuploaded", function(event, data, previewId, index) {
+        //debugger
+        videoUrl = "/file/video/videoAd/"+ data.response.url;
+
+        var ref = $(this).attr("data-ref");
+        $("input[name='" + ref + "']").val(data.response.url);
+    });
+
+
+</script>
+</html>
