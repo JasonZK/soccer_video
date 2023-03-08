@@ -63,20 +63,34 @@ public class uploadVideoController {
             //保存视频大小，单位转换为mb
             long videoSize = file.getSize() / (1024 * 1024);
             //调用数据库接口插入数据库方法save，把视频原名，视频路径，视频的唯一标识码传进去存到数据库内
-            videoUploadMapper.save(videoNameText,videoUrl,newVideoName,videoSize);
+            String videoPath = SavePath+"/"+newVideoName;
+            videoUploadMapper.save(videoNameText,videoUrl,newVideoName,videoSize,videoPath);
             //判断SavePath这个路径也就是需要保存视频的文件夹是否存在
             File filepath = new File(SavePath, file.getOriginalFilename());
             if (!filepath.getParentFile().exists()) {
                 //如果不存在，就创建一个这个路径的文件夹。
                 filepath.getParentFile().mkdirs();
             }
+
+
+
             //保存视频：把视频按照前端传来的地址保存进去，还有视频的名字用唯一标识符显示，需要其他的名字可改这
-            File fileSave = new File(SavePath, "src" + newVideoName);
+            File fileSave = new File(SavePath, newVideoName);
             //下载视频到文件夹中
             file.transferTo(fileSave);
 
-            FfmpegUtil.videoMp4ConvertToH264(ffmpegPath, SavePath+"/src"+newVideoName, SavePath+"/"+newVideoName);
-            System.out.println("converting done");
+            if (Boolean.TRUE.equals(FfmpegUtil.ifVideoFormatMP4(ffmpegPath, SavePath + "/" + newVideoName))){
+                FfmpegUtil.videoMp4ConvertToH264(ffmpegPath, SavePath+"/"+newVideoName, SavePath+"/"+newVideoName);
+                System.out.println("converting done");
+            }
+//            else {
+//                //保存视频：把视频按照前端传来的地址保存进去，还有视频的名字用唯一标识符显示，需要其他的名字可改这
+//                File fileSave2 = new File(SavePath, newVideoName);
+//                //下载视频到文件夹中
+//                file.transferTo(fileSave2);
+//            }
+
+
 
             //构造Map将视频信息返回给前端
             //视频名称重构后的名称：这里put代表添加进map集合内，和前端的push一样。括号内是前面字符串是键，后面是值

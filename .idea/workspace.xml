@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6ffbb52f-bef8-41eb-9f3c-f1984ec694af" name="Default Changelist" comment="" />
+    <list default="true" id="6ffbb52f-bef8-41eb-9f3c-f1984ec694af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/controller/sseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/controller/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/service/SseEmitterServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/service/detectionServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/controller/SelectVideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/controller/SelectVideoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/controller/uploadVideoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/controller/uploadVideoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/mapper/VideoUploadMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/mapper/VideoUploadMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/pojo/VideoUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/pojo/VideoUpload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/utils/FfmpegUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/utils/FfmpegUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzkk/soccer_video/controller/SelectVideoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzkk/soccer_video/controller/SelectVideoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzkk/soccer_video/controller/uploadVideoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzkk/soccer_video/controller/uploadVideoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzkk/soccer_video/mapper/VideoUploadMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzkk/soccer_video/mapper/VideoUploadMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzkk/soccer_video/utils/FfmpegUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzkk/soccer_video/utils/FfmpegUtil.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,35 +32,45 @@
       <list>
         <option value="HTML File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../../../software/Java/JDK8/src.zip!/java/lang/ProcessBuilder.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2IZBYXzuhAfYDv6Pc3UgRxlOTKl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="spring.boot" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "File.Encoding",
+    "spring.configuration.checksum": "332c3e5da032ea568c1448bfb671a1fa",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.zzkk.soccer_video.utils" />
@@ -79,6 +109,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zzkk.soccer_video.controller.test" />
+      <module name="soccer_video" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zzkk.soccer_video.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SoccerVideoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="soccer_video" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zzkk.soccer_video.SoccerVideoApplication" />
@@ -88,10 +131,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MD5Util" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -109,90 +153,33 @@
       <workItem from="1673488011479" duration="20080000" />
       <workItem from="1674886415981" duration="14615000" />
       <workItem from="1675829418420" duration="450000" />
-      <workItem from="1675853065515" duration="614000" />
+      <workItem from="1675853065515" duration="935000" />
+      <workItem from="1677047057171" duration="6000" />
+      <workItem from="1677068557865" duration="171000" />
+      <workItem from="1677130776010" duration="9726000" />
+      <workItem from="1677292088839" duration="35460000" />
     </task>
+    <task id="LOCAL-00001" summary="2">
+      <created>1675856044140</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675856044140</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="LANG" value="zh_CN.UTF-8" />
+    </envs>
   </component>
-  <component name="WindowStateProjectService">
-    <state x="1650" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1670550504087">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1650" y="450" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1670550504087" />
-    <state x="1700" y="458" key="FileChooserDialogImpl" timestamp="1670483893355">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1700" y="458" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1670483893355" />
-    <state width="2517" height="353" key="GridCell.Tab.0.bottom" timestamp="1675081166349">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="353" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1675081166349" />
-    <state width="2517" height="353" key="GridCell.Tab.0.center" timestamp="1675081166349">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="353" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1675081166349" />
-    <state width="2517" height="353" key="GridCell.Tab.0.left" timestamp="1675081166349">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="353" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1675081166349" />
-    <state width="2517" height="353" key="GridCell.Tab.0.right" timestamp="1675081166349">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="353" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1675081166349" />
-    <state width="2517" height="353" key="GridCell.Tab.1.bottom" timestamp="1675081166349">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="353" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1675081166349" />
-    <state width="2517" height="353" key="GridCell.Tab.1.center" timestamp="1675081166349">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="353" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1675081166349" />
-    <state width="2517" height="353" key="GridCell.Tab.1.left" timestamp="1675081166349">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="353" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1675081166349" />
-    <state width="2517" height="353" key="GridCell.Tab.1.right" timestamp="1675081166349">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="353" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1675081166349" />
-    <state width="2517" height="491" key="GridCell.Tab.2.bottom" timestamp="1675080932010">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="491" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1675080932010" />
-    <state width="2517" height="491" key="GridCell.Tab.2.center" timestamp="1675080932009">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="491" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1675080932009" />
-    <state width="2517" height="491" key="GridCell.Tab.2.left" timestamp="1675080932009">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="491" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1675080932009" />
-    <state width="2517" height="491" key="GridCell.Tab.2.right" timestamp="1675080932010">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="2517" height="491" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1675080932010" />
-    <state x="810" y="355" key="Maven.ArtifactSearchDialog" timestamp="1670501841077">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="810" y="355" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1670501841077" />
-    <state x="781" y="342" key="SettingsEditor" timestamp="1675066733426">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="781" y="342" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1675066733426" />
-    <state x="960" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1675829879633">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="960" y="524" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1675829879633" />
-    <state x="1047" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1675068965908">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1047" y="418" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1675068965908" />
-    <state x="1294" y="405" key="new project wizard" timestamp="1670483842269">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1294" y="405" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1670483842269" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2" />
+    <option name="LAST_COMMIT_MESSAGE" value="2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -207,12 +194,11 @@
           <line>38</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zzkk/soccer_video/controller/uploadVideoController.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -20,4 +20,5 @@ public class VideoUpload {
     private String videoUUID;
     private String videoSize;
     private String createdTime;
+    private String videoPath;
 }

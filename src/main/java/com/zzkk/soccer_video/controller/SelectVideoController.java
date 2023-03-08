@@ -4,6 +4,7 @@ import com.zzkk.soccer_video.mapper.VideoUploadMapper;
 import com.zzkk.soccer_video.pojo.VideoUpload;
 import com.zzkk.soccer_video.utils.NonStaticResourceHttpRequestHandler;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,6 +29,7 @@ public class SelectVideoController {
 
     private final NonStaticResourceHttpRequestHandler nonStaticResourceHttpRequestHandler;
 
+    @Autowired
     VideoUploadMapper videoUploadMapper;
 
     //解决跨域的注解

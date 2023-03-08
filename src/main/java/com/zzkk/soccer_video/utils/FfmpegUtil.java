@@ -21,12 +21,20 @@ public class FfmpegUtil {
     public static void videoMp4ConvertToH264(String ffmpegPath, String videoInputPath, String videoOutputPath) throws IOException {
         // 构建命令
         List<String> command = new ArrayList<>();
+//        command.add(ffmpegPath);
+//        command.add("-i");
+//        command.add(videoInputPath);
+//        command.add("-vcodec");
+//        command.add("h264");
+//        command.add(videoOutputPath);
+
         command.add(ffmpegPath);
         command.add("-i");
         command.add(videoInputPath);
-        command.add("-vcodec");
-        command.add("h264");
+        command.add("-c:v libx264");
+        command.add(" -c:a copy");
         command.add(videoOutputPath);
+
         command.forEach(v -> System.out.print(v + " "));
         System.out.println();
         System.out.println();
@@ -50,4 +58,36 @@ public class FfmpegUtil {
         }
 
     }
+    public static Boolean ifVideoFormatMP4(String ffmpegPath, String videoInputPath){
+        // 构建命令
+        String[] cmd = { ffmpegPath, "-vcodec", "copy", "-i", videoInputPath};
+        System.out.println();
+        System.out.println();
+        // 执行操作
+        ProcessBuilder builder = new ProcessBuilder();
+        //正常信息和错误信息合并输出
+        builder.redirectErrorStream(true);
+        builder.command(cmd);
+
+        try {
+            Process process = builder.start();
+            //如果你想获取到执行完后的信息，那么下面的代码也是需要的
+            String line = "";
+            BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            while ((line = br.readLine()) != null) {
+                if (line.contains("Video:")) {
+                    if (line.contains("mp4")) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+            }
+            br.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 }

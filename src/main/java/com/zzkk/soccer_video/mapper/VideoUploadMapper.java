@@ -18,11 +18,11 @@ import java.util.List;
 @Component
 public interface VideoUploadMapper {
     //插入数据到数据库内，目前需要把id加上，不会自动生成id，不然报错
-    @Update("INSERT INTO `video_upload`( `videoName`, `videoUrl`, `videoUUID`, `videoSize`) VALUES (#{videoName},#{videoUrl},#{videoUUID}, #{videoSize});")
+    @Update("INSERT INTO `video_upload`( `videoName`, `videoUrl`, `videoUUID`, `videoSize`, `videoPath`) VALUES (#{videoName},#{videoUrl},#{videoUUID}, #{videoSize}, #{videoPath});")
     //事务注解：可加可不加
     @Transactional
     //接收传过来的参数数据
-    void save(String videoName,String videoUrl,String videoUUID,Long videoSize);
+    void save(String videoName,String videoUrl,String videoUUID,Long videoSize,String videoPath);
 
     //查询数据库内表名为video_upload的全部数据返回
     @Select("select * from video_upload")
